@@ -1,2 +1,4 @@
 .ruby-lsp
 .DS_Store
+.Dockerfile
+.docker-compose.yaml
