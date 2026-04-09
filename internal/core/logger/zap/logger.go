@@ -93,7 +93,6 @@ func initWithLogFolder(config Config, zapLevel zap.AtomicLevel) (logger.Logger, 
 		return nil, fmt.Errorf("%s: %w", op, err)
 	}
 
-	//consoleDebugging := zapcore.Lock(os.Stdout)
 	consoleDebugging := zapcore.AddSync(os.Stdout)
 	fileWriter := zapcore.AddSync(logFile)
 
